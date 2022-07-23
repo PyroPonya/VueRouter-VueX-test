@@ -2,9 +2,11 @@
   <div class="container">
     <h1 class="title">This is a component ONE</h1>
     <nav class="navigation">
-      <router-link to="/one">One</router-link>
-      <router-link to="/two">Two</router-link>
-      <router-link to="/three">Three</router-link>
+      <router-link :to="{ name: 'componentOne' }">One</router-link>
+      <router-link :to="{ name: 'componentTwo', params: { id: '1' } }">Two</router-link>
+      <router-link :to="{ name: 'componentThree', params: { id: '1' } }"
+        >Three</router-link
+      >
     </nav>
     <span>stored count: {{ count }}</span>
     <div class="control">

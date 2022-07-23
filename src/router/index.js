@@ -8,14 +8,16 @@ const routes = [
     alias: '/',
   },
   {
-    path: '/two',
+    path: '/two/:id',
     name: 'componentTwo',
     component: () => import('../components/componentTwo.vue'),
+    props: true,
   },
   {
-    path: '/three',
+    path: '/three/:id',
     name: 'componentThree',
     component: () => import('../components/componentThree.vue'),
+    props: true,
   },
 ];
 
